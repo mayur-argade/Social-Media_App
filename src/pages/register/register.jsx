@@ -1,32 +1,42 @@
-import { Button, TextField } from "@material-ui/core";
+import {Grid, Button, TextField, Paper } from "@material-ui/core";
 import "./register.css";
 
 export default function Register() {
   return (
-    <div className="login">
-      <div className="loginWrapper">
-      <div className="logintop">
-          <h3 className="loginLogo">Vrukshvalli</h3>
-          <span className="loginDesc">
-            Every Tree Matters
-          </span>
-          </div>
-        <div className="loginLeft">
-          <img src="" alt="" />
-        </div>
-        <div className="loginRight">
-          <div className="loginBox">
-            <TextField placeholder="Username" className="loginInput" />
-            <TextField placeholder="Email" className="loginInput" />
-            <TextField placeholder="Password" className="loginInput" />
-            <TextField placeholder="Password Again" className="loginInput" />
-            <Button className="loginButton">Sign Up</Button>
-            <Button className="loginRegisterButton">
-              Log into Account
-            </Button>
-          </div>
-        </div>
-      </div>
-    </div>
+<>
+<Grid container
+direction="column"
+justifyContent="center"
+alignItems="center">
+  <Grid item className="titile" >
+   <h1>Vrukshavalli</h1>
+  </Grid>
+  <Grid item className="description">
+    <h2>Every tree matters</h2>
+  </Grid>
+    <Grid container className="mainscreen" 
+     direction="row"
+     justifyContent="center"
+     alignItems="center">
+      <Grid item className="img" xs={6}>
+    <img src="/assests/register.jfif" alt="" className="hi"/>
+      </Grid>
+      <Grid item className="loginform" xs={4}>
+      <Paper elevation={4}>
+      <div className="loginBox">
+              <h3>Sign Up</h3>
+              <TextField id="outlined-basic" label="Username" variant="outlined" className="loginInput" />
+              <TextField id="outlined-basic" label="Email" variant="outlined" className="loginInput" />
+              <TextField id="outlined-basic" label="Password" variant="outlined" className="loginInput" />
+              <TextField id="outlined-basic" label="Password Again" variant="outlined" className="loginInput" />
+              <Button variant="contained" className="loginButton">Sign Up</Button>
+              <Button variant="contained" className="loginRegisterButton">Log into Account</Button>
+            </div>
+        </Paper>
+      </Grid>
+    </Grid>
+
+</Grid>
+    </>
   );
 }

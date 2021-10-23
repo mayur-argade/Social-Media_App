@@ -8,70 +8,42 @@ const Sidebar = () => {
         <div className="sidebarwrapper">
             <ul className="sidebarList">
                 <li className="sidebarListItem">
-                    <RssFeed  className="sidebarIcon" />
+                <img src="/assests/post.png" alt="" className="sidebarIcon" />
                     <span className="sidebarListItemText">
                         Feed
                     </span>
                 </li>
 
                 <li className="sidebarListItem">
-                    <HelpOutlined  className="sidebarIcon" />
+                <img src="/assests/event.png" alt="" className="sidebarIcon" />
                     <span className="sidebarListItemText">
-                        Bookmark
+                        Event
                     </span>
                 </li>
 
                 <li className="sidebarListItem">
-                    <WorkOffOutlined  className="sidebarIcon" />
+                    <img src="/assests/blog1.png" alt="" className="sidebarIcon" />
                     <span className="sidebarListItemText">
-                        event
+                        Blogs
                     </span>
                 </li>
 
                 <li className="sidebarListItem">
-                    <Event  className="sidebarIcon" />
+                <img src="/assests/news.png" alt="" className="sidebarIcon" />
                     <span className="sidebarListItemText">
-                        Job
+                     News
                     </span>
                 </li>
 
                 <li className="sidebarListItem">
-                    <School  className="sidebarIcon" />
+                <img src="/assests/quotes.png" alt="" className="sidebarIcon" />
                     <span className="sidebarListItemText">
-                        Courses
+                        Quotes
                     </span>
                 </li>
             </ul>
-            <button className="sidebarButton" >Show more</button>
+        
             <hr className="sidebarHr" />
-            <ul className="sidebarFriendList">
-                <li className="sidebarFriend">
-                    <img src="/assests/person/4.jpg" alt="" className="sidebarFriendImg"/>
-                    <span className="sidebarFriendName">Rohit kute</span>
-                </li>
-            </ul>
-
-
-            <ul className="sidebarFriendList">
-                <li className="sidebarFriend">
-                    <img src="/assests/person/4.jpg" alt="" className="sidebarFriendImg"/>
-                    <span className="sidebarFriendName">Rohit kute</span>
-                </li>
-            </ul>
-
-            <ul className="sidebarFriendList">
-                <li className="sidebarFriend">
-                    <img src="/assests/person/4.jpg" alt="" className="sidebarFriendImg"/>
-                    <span className="sidebarFriendName">Rohit kute</span>
-                </li>
-            </ul>
-
-            <ul className="sidebarFriendList">
-                <li className="sidebarFriend">
-                    <img src="/assests/person/4.jpg" alt="" className="sidebarFriendImg"/>
-                    <span className="sidebarFriendName">Rohit kute</span>
-                </li>
-            </ul>
             
         </div>
         </div>

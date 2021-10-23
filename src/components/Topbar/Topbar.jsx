@@ -1,9 +1,13 @@
 import React from 'react'
 import { Chat , Person, Search, Notifications } from "@material-ui/icons"
+import { AppBar, Toolbar } from '@material-ui/core';
 import "./topbar.css";
 
 const Topbar = () => {
     return (
+        <>
+        <AppBar position="static" color="primary">
+            <Toolbar>
         <div className="topbarcontainer">
             <div className="topbarleft">
                 <span className="logo">Vruskhvalli</span>
@@ -15,10 +19,7 @@ const Topbar = () => {
                 </div>
             </div>
             <div className="topbarright">
-                <div className="topbarlinks">
-                    <span className="topbarlink">homepage</span>
-                    <span className="topbarlink">timeline</span>
-                </div>
+              
                 <div className="topbaricons">
                     <div className="topbarIconItem"> <Person /> 
                     <span className="topbariconBadge"> 1 </span>
@@ -37,6 +38,9 @@ const Topbar = () => {
                 <img src="/assests/person/1.jpg" alt="" className="topbarimg" />
             </div>
         </div>
+        </Toolbar>
+        </AppBar>
+        </>
     )
 }
 

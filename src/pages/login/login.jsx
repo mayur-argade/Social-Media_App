@@ -1,32 +1,43 @@
 import "./login.css";
-import { TextField, Button } from "@material-ui/core";
+import {Grid, TextField, Button, Paper } from "@material-ui/core";
 
 export default function Login() {
   return (
-
-    <div className="login">
-      <div className="loginWrapper">
-          <div className="logintop">
-          <h3 className="loginLogo">Vrukshvalli</h3>
-          <span className="loginDesc">
-            Every Tree Matters
-          </span>
-          </div>
-        <div className="loginLeft">
-          <img src="/assests/" alt="" />
+    <>
+  <Grid container
+  className="loginscree"
+direction="column"
+justifyContent="center"
+alignItems="center">
+  <Grid item className="titile" >
+   <h1>Vrukshavalli</h1>
+  </Grid>
+  <Grid item className="description">
+    <h2>Every tree matters</h2>
+  </Grid>
+    <Grid container className="mainscreen" 
+     direction="row"
+     justifyContent="center"
+     alignItems="center">
+      <Grid item className="img" xs={6}>
+    <img src="/assests/register.jfif" alt="" className="hi"/>
+      </Grid>
+      <Grid item className="loginform" xs={4}>
+      <Paper elevation={4}>
+      <div className="loginBox">
+            <h3>Log in</h3>
+           <TextField id="outlined-basic" label="Email" variant="outlined" />
+            <TextField id="outlined-basic" label="Password" variant="outlined" />
+            <Button variant="contained" className="loginButton">Login</Button> 
+            <span className="loginForgot">Forgot Password?</span>
+             <Button className="loginRegisterButton">
+               Create a New Account
+              </Button>
         </div>
-        <div className="loginRight">
-          <div className="loginBox">
-          <TextField id="outlined-basic" label="Email" variant="outlined" />
-          <TextField id="outlined-basic" label="Password" variant="outlined" />
-           <Button className="loginButton">Login</Button> 
-           <span className="loginForgot">Forgot Password?</span>
-            <Button className="loginRegisterButton">
-              Create a New Account
-            </Button>
-          </div>
-        </div>
-      </div>
-    </div>
+        </Paper>
+      </Grid>
+    </Grid>
+</Grid>
+    </>
   );
 }
