@@ -1,4 +1,3 @@
-import { Event, HelpOutlined, RssFeed, School, WorkOffOutlined } from '@material-ui/icons'
 import React from 'react'
 import "./sidebar.css"
 

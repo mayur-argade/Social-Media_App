@@ -26,7 +26,7 @@ export const Posts = [
     {
         id:1,
         desc:"i am mayur",
-        photo:"/assests/posts/2.jpg",
+        photo:"posts/2.jpg",
         date: "12 min ago",
         userId: 1,
         like:32,
@@ -35,7 +35,7 @@ export const Posts = [
     {
         id:2,
         desc:"i am rohit",
-        photo:"/assests/posts/2.jpg",
+        photo:"posts/2.jpg",
         date: "123 min ago",
         userId: 2,
         like:3432,
@@ -44,7 +44,7 @@ export const Posts = [
     {
         id:3,
         desc:"i am vaishnavi",
-        photo:"/assests/posts/1.jfif",
+        photo:"posts/1.jfif",
         date: "1 min ago",
         userId: 3,
         like:32234,
@@ -53,7 +53,7 @@ export const Posts = [
     {
         id:4,
         desc:"i am mohini",
-        photo:"/assests/posts/2.jpg",
+        photo:"posts/2.jpg",
         date: "34 min ago",
         userId: 4,
         like:2,

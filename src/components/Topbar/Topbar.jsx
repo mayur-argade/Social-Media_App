@@ -2,6 +2,7 @@ import React from 'react'
 import { Chat , Person, Search, Notifications } from "@material-ui/icons"
 import { AppBar, Toolbar } from '@material-ui/core';
 import "./topbar.css";
+import { Link } from "react-router-dom"
 
 const Topbar = () => {
     return (
@@ -10,7 +11,9 @@ const Topbar = () => {
             <Toolbar>
         <div className="topbarcontainer">
             <div className="topbarleft">
+            <Link to="/" style={{textDecoration:"none"}}>    
                 <span className="logo">Vruskhvalli</span>
+            </Link>
             </div>
             <div className="topbarcenter">
                 <div className="searchbar">
